@@ -14,7 +14,7 @@ Cryptocurrency markets are known for:
 - Non-normal return distributions  
 - Pronounced tail risk and extreme events  
 
-The aim is to quantify and better understand these risk characteristics using historical data and modern risk modelling tools.
+This repository implements an academic assignment on assessing the financial risk characteristics of cryptocurrency returns. The analysis is carried out using an Excel-based database, standard risk measures such as Value at Risk (VaR) and Expected Shortfall (ES), and advanced tail modelling with Extreme Value Theory (EVT). A GARCH-EVT approach and the FindTheTail tool are used to capture and analyse extreme events in cryptocurrency markets. 
 
 ---
 
