@@ -45,15 +45,19 @@ This repository reflects the following workflow:
      - [coinmarketcap.com](https://coinmarketcap.com)  
      - [messari.io](https://messari.io)  
    - Define:
-     - Sample period (start and end dates)  
-     - Frequency (e.g., daily prices)  
-     - Assets (e.g., BTC, ETH, etc.)
+     - Sample period (From 01/11/2022 to 05/11/2025)  
+     - Frequency (daily prices)  
+     - Assets (CurveDAO, Uniswap, PancakeSwap, Pendle, Raydium)
+    
+After downloading the price data, prices are aligned on a common calendar, missing values are handled (e.g., by removing days where not all assets have observations), and simple or log returns are computed from the cleaned price series.
 
 3. **Create Excel database**  
    - Store cleaned price data in a structured Excel file:  
      - Consistent date format  
      - One sheet or table per asset or a combined panel  
    - Compute **log returns** or simple returns in Excel or via code and store them in the same workbook.
+The cleaned prices and corresponding return series are stored in `DEX Data Database.xlsx`. 
+
 
 4. **Basic risk assessment and computation of VaR/ES**  
    - Compute descriptive statistics for returns:  
@@ -86,9 +90,9 @@ This repository reflects the following workflow:
 
 ## 4. Data Description
 
-- **Assets**: Selected major cryptocurrencies (e.g., BTC, ETH, and others as defined in the assignment).  
-- **Frequency**: Typically daily closing prices.  
-- **Period**: To be specified (e.g., from YYYY-MM-DD to YYYY-MM-DD).  
+- **Assets**: Selected major cryptocurrencies (CurveDAO, Uniswap, PancakeSwap, Pendle, Raydium).  
+- **Frequency**: Typically daily closing prices. daily prices
+- **Period**: To be specified (From 01/11/2022 to 05/11/2025).  
 - **Sources**:
   - CoinGecko  
   - CoinMarketCap  
