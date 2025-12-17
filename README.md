@@ -138,26 +138,4 @@ The project applies the following methods:
 - Use results as a cross-check for EVT work done in Excel or code.
 
 ---
-
-## 6. Repository Structure
-
-*(Adjust this to match your actual files.)*
-
-```text
-.
-├── data/
-│   ├── raw/                 # Raw downloads from CoinGecko, CoinMarketCap, Messari
-│   └── processed/           # Cleaned data and Excel database with returns
-├── excel/
-│   └── crypto_risk_database.xlsx   # Main Excel database
-├── notebooks/
-│   ├── 01_data_preparation.ipynb   # Import, cleaning, return calculation
-│   ├── 02_basic_risk_analysis.ipynb # Descriptive stats, VaR, ES
-│   ├── 03_evt_and_iid_tests.ipynb   # EVT setup, iid tests, residual diagnostics
-│   └── 04_garch_evt.ipynb           # GARCH modelling and EVT on residuals
-├── figures/
-│   └── ...                   # Plots for distributions, tails, and risk estimates
-├── report/
-│   └── crypto_risk_report.pdf # Final written assignment (if applicable)
-├── requirements.txt          # Python dependencies (if using Python)
 └── README.md                 # Project documentation
