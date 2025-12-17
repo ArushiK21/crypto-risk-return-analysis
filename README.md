@@ -138,4 +138,3 @@ The project applies the following methods:
 - Use results as a cross-check for EVT work done in Excel or code.
 
 ---
-└── README.md                 # Project documentation
